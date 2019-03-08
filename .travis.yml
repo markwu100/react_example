@@ -3,14 +3,14 @@ services:
   - docker
 
 script:
-  - docker build -t mannydesigns/react-example2 .
-  - docker images mannydesigns/react-example2
+  - docker build -t markwu100/react-example .
+  - docker images markwu100/react-example
 
 before_deploy:
   - docker login -u  -p 
 
 deploy:
   provider: script
-  script: docker push mannydesigns/react-example2
+  script: docker push markwu100/react-example
   on:
     branch: master
