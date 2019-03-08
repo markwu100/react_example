@@ -7,7 +7,7 @@ script:
   - docker images markwu100/react-example
 
 before_deploy:
-  - docker login -u  -p 
+  - docker login -u markwu100 -p qiaqia0207
 
 deploy:
   provider: script
