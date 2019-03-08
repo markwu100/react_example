@@ -6,6 +6,7 @@ script:
   - docker build -t markwu100/react-example .
   - docker images markwu100/react-example
 
+
 before_deploy:
   - docker login -u markwu100 -p qiaqia0207
 
